@@ -1,9 +1,11 @@
 package main
 
 import (
-	"fmt"
+	"github.com/HAL-Future-Creation-Exhibition/go-nellow/router"
 )
 
 func main() {
-	fmt.Println("hello")
+
+	r := router.GetRouter()
+	r.Run()
 }
