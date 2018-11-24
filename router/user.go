@@ -9,7 +9,7 @@ import (
 
 func userApiRouter(user *gin.RouterGroup) {
 	user.GET("/test", func(c *gin.Context) {
-		c.JSON(http.StatusOK, "ようこそ User")
+		c.JSON(http.StatusOK, "ようこそ Userさま")
 	})
 	user.GET("/", controller.UserController.Get)
 	user.POST("/", controller.UserController.Create)
